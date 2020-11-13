@@ -16,7 +16,7 @@
 
 **Response** là lúc Backend trả lời lại cho Client.
 * **(3)**: Backend trả lời lại cho Client với header:
-	* **Source IP:** 10.0.0.1
+	* **Source IP:** 10.0.0.2
 	* **Dest IP:** 192.168.0.100
 	* **Dest MAC:** Default gateway MAC.
 
