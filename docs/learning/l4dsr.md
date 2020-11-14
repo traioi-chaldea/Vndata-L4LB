@@ -20,6 +20,7 @@
 ### IP-in-IP Encapsulation
 
 **L4LB** sử dụng 1 IP để forward packets cho nhiều Backend ở phía sau Load Balancer. Tuy nhiên các packets này cần đánh dấu (mark) để phân biệt rằng packet này phù hợp cho Services nào. **L4LB** sẽ sử dụng 5 fields quan trọng được trích ra từ các Layer Header tương ứng để đóng gói và xác định rằng packets này có flow nào phù hợp đi về Backend nào.
+
 	* **Source Address (Layer 3):** Lưu lại Client IP để bypass checksum và sử dụng cho Backend DR về Client.
 	* **Destination Address (Layer 3):** Xác định Load Balancer/NIC tương ứng với IP.
 	* **Source Port (Layer 4):** Lưu lại Client Port để không bị break đường socket Client-Server.
